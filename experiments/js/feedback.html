@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        input {
+            width: 20%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="" method="post" onsubmit="formSubmit()">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required value="Iarbor Majaw">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required value="iarbor.majaw@example.com">
+        <button>Submit</button>
+    </form>
+    <script>
+        function formSubmit() {
+            let name = document.getElementById("name").value;
+            window.alert(name);
+        }
+    </script>
+</body>
+</html>
